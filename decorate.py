@@ -6,6 +6,9 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 from random import choice, shuffle, randint
 
+if not os.path.isdir("final-image"):
+    os.mkdir("final-image")
+
 def select_random_image_location():
     """
     :return: location of a randomly selected image (for background)
